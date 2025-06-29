@@ -1,11 +1,11 @@
 import { createRoot } from "react-dom/client";
-import { Counter } from "./components/Counter";
+import App from "./App";
 
 const domNode = document.getElementById("root");
 const root = createRoot(domNode);
 
 root.render(
     <div className="lol">
-        <Counter />
+        <App />
     </div>
 );
