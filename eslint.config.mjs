@@ -20,17 +20,12 @@ export default defineConfig([
     tseslint.configs.recommended,
     pluginReact.configs.flat.recommended,
     i18next.configs["flat/recommended"],
-    globalIgnores([
-        "**/node_modules/*",
-        "**/ThemeContext.ts",
-        "**/routeConfig.tsx",
-        "**/AppLink.tsx",
-        "**/Button.tsx",
-    ]),
+    globalIgnores(["**/node_modules/*"]),
     {
         rules: {
             "react/react-in-jsx-scope": "off",
             "@typescript-eslint/no-unused-vars": "warn",
+            "@typescript-eslint/no-duplicate-enum-values": "off",
         },
     },
 ]);
