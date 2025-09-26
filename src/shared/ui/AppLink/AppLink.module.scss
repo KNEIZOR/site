@@ -6,6 +6,14 @@
     color: var(--primary-color);
 }
 
+.primary:hover{
+    color: red;
+}
+
 .secondary {
     color: var(--inverted-primary-color);
+}
+
+.secondary:hover{
+    color: red;
 }
