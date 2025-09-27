@@ -1,11 +1,8 @@
-import { Decorator } from "@storybook/react-webpack5";
-import "app/styles/index.scss";
-import { BrowserRouter } from "react-router-dom";
+import { Story } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
 
-export const RouterDecorator: Decorator = (Story) => {
-    return (
-        <BrowserRouter>
-            <Story />
-        </BrowserRouter>
-    );
-};
+export const RouterDecorator = (story: () => Story) => (
+    <BrowserRouter>
+        {story()}
+    </BrowserRouter>
+);

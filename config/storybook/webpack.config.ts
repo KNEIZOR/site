@@ -1,29 +1,21 @@
-import path from "path";
-import { BuildPaths } from "./../build/types/config";
-import webpack from "webpack";
-import { buildCssLoader } from "../build/loaders/BuildCssLoader";
+import webpack, { RuleSetRule } from 'webpack';
+import path from 'path';
+import { buildCssLoader } from '../build/loaders/buildCssLoader';
+import { BuildPaths } from '../build/types/config';
 
-export default ({ config }: { config: webpack.Configuration }) => {
+export default ({ config }: {config: webpack.Configuration}) => {
     const paths: BuildPaths = {
-        build: "",
-        entry: "",
-        html: "",
-        src: path.resolve(__dirname, "..", "..", "src"),
+        build: '',
+        html: '',
+        entry: '',
+        src: path.resolve(__dirname, '..', '..', 'src'),
     };
-    config.resolve?.modules?.push(paths.src);
-    config.resolve?.extensions?.push(".ts", ".tsx");
+    config.resolve.modules.push(paths.src);
+    config.resolve.extensions.push('.ts', '.tsx');
 
-    config.module = config.module || {};
-    config.module.rules = config.module.rules || [];
-
-    config.module.rules = config.module.rules.map((rule) => {
-        if (!rule || typeof rule !== "object") return rule;
-
-        if (
-            "test" in rule &&
-            rule.test instanceof RegExp &&
-            rule.test.source.includes("svg")
-        ) {
+    // eslint-disable-next-line no-param-reassign
+    config.module.rules = config.module.rules.map((rule: RuleSetRule) => {
+        if (/svg/.test(rule.test as string)) {
             return { ...rule, exclude: /\.svg$/i };
         }
 
@@ -32,9 +24,9 @@ export default ({ config }: { config: webpack.Configuration }) => {
 
     config.module.rules.push({
         test: /\.svg$/,
-        use: ["@svgr/webpack"],
+        use: ['@svgr/webpack'],
     });
-    config.module?.rules?.push(buildCssLoader(true));
+    config.module.rules.push(buildCssLoader(true));
 
     return config;
 };

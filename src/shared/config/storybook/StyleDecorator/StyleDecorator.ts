@@ -1,4 +1,4 @@
-import { Decorator } from "@storybook/react-webpack5";
-import "app/styles/index.scss";
+import 'app/styles/index.scss';
+import { Story } from '@storybook/react';
 
-export const StyleDecorator: Decorator = (Story) => Story();
+export const StyleDecorator = (story: () => Story) => story();
