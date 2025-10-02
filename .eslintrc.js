@@ -49,7 +49,6 @@ module.exports = {
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 150 }],
-        "avoidEscape": true
     },
     globals: {
         __IS_DEV__: true,
