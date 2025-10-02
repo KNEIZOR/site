@@ -1,10 +1,10 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
-import { SideBar } from 'widgets/SideBar';
+import { Sidebar } from 'widgets/Sidebar';
 
 function App() {
     const { theme } = useTheme();
@@ -14,7 +14,7 @@ function App() {
             <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
-                    <SideBar />
+                    <Sidebar />
                     <AppRouter />
                 </div>
             </Suspense>
