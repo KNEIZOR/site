@@ -1,6 +1,5 @@
 {
-    "i18n-ally.localesPaths": [
-        "public/locales",
-        "src/shared/config/i18n"
-    ]
+    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
+    "prettier.singleAttributePerLine": false,
+    "prettier.singleQuote": true
 }
