@@ -1,5 +1,6 @@
 {
     "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "prettier.singleAttributePerLine": false,
-    "prettier.singleQuote": true
+    "prettier.singleQuote": true,
+    "i18n-ally.keystyle": "flat"
 }
