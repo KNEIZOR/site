@@ -1,10 +1,20 @@
 {
+  "": "",
+  "D": "D",
+  "E пароль": "E пароль",
+  "Enter password": "Enter password",
+  "Enter username": "Enter username",
+  "Enter пароль": "Enter пароль",
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry": {
     "": ""
   },
   "decrement": "decrement",
   "increment": "increment",
+  "login": "login",
   "throw error": "throw error",
+  "Вв": "Вв",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль",
   "Войти": "Войти",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
