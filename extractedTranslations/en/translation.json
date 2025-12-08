@@ -1,22 +1,26 @@
 {
   "": "",
+  "Aj": "",
   "D": "D",
-  "E пароль": "E пароль",
-  "Enter password": "Enter password",
-  "Enter text": "",
-  "Enter username": "Enter username",
-  "Enter пароль": "Enter пароль",
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry": {
-    "": ""
+  "Exit": "",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
+      "": ""
+    }
   },
+  "You enter ": "",
+  "You entered an incorrect login or password": "",
+  "authorization form": "",
   "decrement": "decrement",
+  "form autori": "",
+  "form autoriz": "",
+  "form autorization": "",
   "increment": "increment",
-  "login": "login",
   "throw error": "throw error",
-  "Вв": "Вв",
   "Введите username": "Введите username",
   "Введите пароль": "Введите пароль",
   "Войти": "Войти",
+  "Вы ввели неправильный логин или пароль": "",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
   "О сайте": "О сайте",

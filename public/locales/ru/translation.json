@@ -12,10 +12,12 @@
   "О сайте": "О сайте",
   "Переключить": "Переключить",
   "Короткий язык": "Ru",
-  "increment": "Увеличить",
-  "decrement": "Уменьшить",
-  "login": "Войти",
-  "Enter username": "Введите username",
-  "Enter password": "Введите пароль",
-  "Enter text": "Введите текст"
+  "Войти": "Войти",
+  "increment": "increment",
+  "decrement": "decrement",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль",
+  "authorization form": "Форма авторизации",
+  "You entered an incorrect login or password": "Вы ввели неправильный логин или пароль",
+  "Exit": "Выйти"
 }

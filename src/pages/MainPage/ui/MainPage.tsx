@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Input } from 'shared/ui/Input/Input';
 
-export const MainPage = () => {
+const MainPage = () => {
     const { t } = useTranslation();
     const [value, setValue] = useState('');
 
@@ -13,11 +13,8 @@ export const MainPage = () => {
     return (
         <div>
             {t('Главная страница')}
-            <Input
-                placeholder={t('Enter text')}
-                value={value}
-                onChange={onChange}
-            />
         </div>
     );
 };
+
+export default MainPage;

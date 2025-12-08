@@ -2,8 +2,8 @@ import { DeepPartial } from '@reduxjs/toolkit';
 import { StateSchema } from 'app/providers/StoreProvider';
 import { getCounterValue } from './getCounterValue';
 
-describe('getCounterValue', () => {
-    test('return value', () => {
+describe('getCounterValue.test', () => {
+    test('', () => {
         const state: DeepPartial<StateSchema> = {
             counter: { value: 10 },
         };
