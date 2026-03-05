@@ -1,12 +1,23 @@
 {
+  "": "",
+  "Edit": "Edit",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""
     }
   },
   "PROFILE PAGE": "",
+  "Profile": "Profile",
+  "Your ": "Your ",
+  "Your last name": "Your last name",
+  "Your lastNa": "Your lastNa",
+  "Your lastname": "Your lastname",
+  "Your name": "Your name",
   "decrement": "decrement",
   "increment": "increment",
+  "profie": {
+    "Edit": "Edit"
+  },
   "throw error": "throw error",
   "Введите username": "Введите username",
   "Введите пароль": "Введите пароль",
