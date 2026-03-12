@@ -13,8 +13,8 @@ import cls from './ProfileCard.module.scss';
 interface ProfileCardProps {
     className?: string;
     data?: Profile;
-    isLoading: boolean;
-    error: string;
+    isLoading: boolean | undefined;
+    error: string | undefined;
     readonly?: boolean;
     onChangeFirstname?: (value?: string) => void;
     onChangeLastname?: (value?: string) => void;
